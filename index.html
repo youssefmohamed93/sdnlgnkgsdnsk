@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore top-notch milks, dairies, fashion apparel, pet foods, and fresh fruits. Everything you need, all in one place at Nest.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="Images/Logo.svg">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Nest</title>
+</head>
+<body>
+    <div class="Nest-Container">
+        <section class="section-one" id="section-one">
+            <header class="header container mx-auto w-full flex items-center justify-between p-container">
+                <div class="logo">
+                    <a class="flex items-center text-5xl font-extrabold text-green" href="#section-one">
+                        <img class="mr-2" src="Images/Logo.svg" alt="Nest">
+                        <h1>Nest</h1>
+                    </a>
+                </div>
+                <div class="search relative">
+                    <input class="px-4 py-1 text-lg font-semibold rounded-full" type="search" placeholder="Search For Items">
+                    <a><i class='bx bx-search cursor-pointer text-2xl text-gray absolute top-1/2 right-3.5'></i></a>
+                </div>
+                <div class="navbar">
+                    <ul class="navlist flex items-center">
+                        <li>
+                            <a class="flex items-center text-lg font-semibold" href="#">
+                                <i class='bx bx-cart-alt text-2xl mr-1 text-main' ></i>
+                                <h3>Cart</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex items-center text-lg font-semibold" href="#">
+                                <i class='bx bx-user mr-1 text-2xl text-main'></i>
+                                <h3>Account</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <header class="header-two container mx-auto w-full flex items-center justify-between p-container">
+                <div class="header-dropdown relative inline-block">
+                    <button onclick="myFunction()" class="header-dropbtn flex items-center justify-between cursor-pointer text-lg text-white">
+                        <i class='bx bxs-widget mr-1'></i>
+                        <h3 id="categoryText">Categories</h3>
+                        <i id="chevronIcon" class='bx bx-chevron-down ml-1 text-3xl'></i>
+                    </button>
+                    <div id="myHeaderDropdown" class="header-dropdown-content absolute z-40 text-center shadow">
+                        <a class="block p-2 cursor-pointer" onclick="updateCategory('Milks & Dairies')">Milks & Dairies</a>
+                        <a class="block p-2 cursor-pointer" onclick="updateCategory('Baking material')">Baking material</a>
+                        <a class="block p-2 cursor-pointer" onclick="updateCategory('Pet Foods')">Pet Foods</a>
+                        <a class="block p-2 cursor-pointer" onclick="updateCategory('Fresh Fruit')">Fresh Fruit</a>                        
+                    </div>
+                </div>
+                <div class="navbar-two">
+                    <ul class="navlist-two flex items-center">
+                        <li>
+                            <a href="#" class="text-green px-2 py-1 text-lg font-bold">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-main px-2 py-1 text-lg font-bold">About</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-main px-2 py-1 text-lg font-bold">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-main px-2 py-1 text-lg font-bold">Support</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-main px-2 py-1 text-lg font-bold">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="support-center flex items-center">
+                    <i class='bx bx-support text-4xl cursor-pointer text-main mr-4'></i>
+                    <div class="support-center-text flex flex-col items-center">
+                        <div class="support-number">
+                            <h3 class="text-green text-3xl font-bold">1900 - 888</h3>
+                        </div>
+                        <div class="support-p text-main text-lg font-semibold">
+                            <p>24/7 Support Center</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="section-one-content container mx-auto p-container swiper">
+                <div class="swiper-wrapper">
+                    <div class="section-one-image flex justify-center items-center relative swiper-slide">
+                        <img src="Images/SectionOne(2).jpg" class="object-cover object-center w-full h-full" alt="">
+                        <div class="section-one-text absolute z-30">
+                            <h1 class="text-6xl font-extrabold text-main">
+                                Fresh Vegetables <br> Big Discount
+                            </h1>
+                            <p class="mt-8 text-2xl font-bold text-main">Save up to 50% off on your first order.</p>
+                            <div class="section-one-input flex flex-col relative">
+                                <i class='bx bx-send text-2xl absolute cursor-pointer'></i>
+                                <input class="my-8 pl-10 rounded-md" type="email" placeholder="Your Emaill Address">
+                                <button class="text-white text-lg font-bold rounded-md" type="submit">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-one-image flex justify-center items-center relative swiper-slide">
+                        <img src="Images/SectionOne(1).jpg" class="object-cover object-center w-full h-full" alt="">
+                        <div class="section-one-text absolute z-30">
+                            <h1 class="text-6xl font-extrabold text-main">
+                                Don’t Miss Amazing <br> Grocery Deals
+                            </h1>
+                            <p class="mt-8 text-2xl font-bold text-main">Sign up for the daily newsletter.</p>
+                            <div class="section-one-input flex flex-col relative">
+                                <i class='bx bx-send text-2xl absolute cursor-pointer'></i>
+                                <input class="my-8 pl-10 rounded-md" type="email" placeholder="Your Emaill Address">
+                                <button class="text-white text-lg font-bold rounded-md" type="submit">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-one-image flex justify-center items-center relative swiper-slide">
+                        <img src="Images/SectionOne(3).jpg" class="object-cover object-center w-full h-full" alt="">
+                        <div class="section-one-text absolute z-30">
+                            <h1 class="text-6xl font-extrabold text-white">
+                                Don’t Miss Amazing <br> Grocery Deals
+                            </h1>
+                            <p class="mt-8 text-2xl font-bold text-white">Sign up for the daily newsletter.</p>
+                            <div class="section-one-input flex flex-col relative">
+                                <i class='bx bx-send text-2xl absolute cursor-pointer'></i>
+                                <input class="my-8 pl-10 rounded-md" type="email" placeholder="Your Emaill Address">
+                                <button class="text-white text-lg font-bold rounded-md" type="submit">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
